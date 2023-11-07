@@ -62,7 +62,7 @@ const index = () => {
   }, [serviceProvider]);
   return (
     <>
-      <div className="flex">
+      <div className="flex justify-center ">
         <div className="w-8/12 mb-12">
           {/* <div className="w-full">
             <Navbar />
@@ -70,7 +70,7 @@ const index = () => {
           <div>
             {/* <p className="text-2xl mt-20 flex justify-center font-semibold">User Management</p> */}
             
-          <p className="text-3xl font-semibold mt-28  text-center">Withdrawal Requests</p>
+          <p className="text-3xl font-semibold mt-24  text-center">User Management</p>
           <div className="border border-bottom border-[#d4d4d4] w-full mt-10"></div>
             <div className="flex justify-center space-x-28 mt-2">
             <p className="text-xl font-semibold cursor-pointer">Cleaners</p>

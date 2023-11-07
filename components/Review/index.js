@@ -40,10 +40,10 @@ const   index = () => {
     <>
       <div className=" ">
         {/* <Navbar /> */}
-        <div className="mt-8 ">
-          <p className="text-3xl font-semibold mt-32  text-center">New Review & Rating Requests</p>
+        <div className="mt-24 ">
+          <p className="text-3xl font-semibold   text-center">New Review & Rating Requests</p>
           <div className=" border-2 border-bottom border-[#e2e2e2] mt-5"></div>
-          <div className="mt-10 flex w-[100%] justify-between ">
+          <div className="mt-10 flex w-[90%] mx-auto justify-between ">
           <div className="bg-white w-[32%] rounded-2xl shadow-xl  pb-4 mb-8">
       
      
@@ -200,7 +200,7 @@ const   index = () => {
 
 
 
-          <div className="mt-10 flex w-[100%] justify-between ">
+          <div className="mt-10 flex w-[90%] mx-auto justify-between ">
           <div className="bg-white w-[32%] rounded-2xl shadow-xl  pb-4 mb-8">
       
      

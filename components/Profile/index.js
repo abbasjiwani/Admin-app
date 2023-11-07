@@ -8,7 +8,7 @@ const index = () => {
     <>
       <div className="w-[90%] mb-10">
        
-        <div className=" mt-36 ml-14">
+        <div className=" mt-24 ml-14">
          <div className="flex  justify-between">
           <p className="text-3xl flex font-semibold ">Profile</p>
           <div className="flex space-x-4">

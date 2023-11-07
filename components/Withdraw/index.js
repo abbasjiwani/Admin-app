@@ -6,10 +6,11 @@ const index = () => {
   const array = [];
   return (
     <>
+    <div className="w-full flex justify-center">
       <div className="w-[70%] ">
         {/* <Navbar /> */}
-        <div className="mt-8 ml-14">
-          <p className="text-3xl font-semibold mt-28  text-center">Withdrawal Requests</p>
+        <div className="  ">
+          <p className="text-3xl font-semibold mt-24  text-center">Withdrawal Requests</p>
           <div className="border border-bottom border-[#d4d4d4] w-full mt-10"></div>
           <div className="flex justify-center space-x-28 mt-2">
             <p className="text-xl font-semibold cursor-pointer">New</p>
@@ -30,6 +31,7 @@ const index = () => {
           </div>
           
         </div>
+      </div>
       </div>
     </>
   );

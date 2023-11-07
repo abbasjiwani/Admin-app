@@ -8,9 +8,9 @@ const index = () => {
     <>
       <div className="w-[90%] mx-auto">
         {/* <Navbar /> */}
-        <div className="mt-8 ml-14">
-          <p className="text-3xl font-semibold mt-32  text-center">Push Notifications</p>
-          <div className="mt-10">
+        <div className="mt-24 ">
+          <p className="text-3xl font-semibold text-center">Push Notifications</p>
+          <div className="mt-6">
         <div className="border-2 border-bottom border-[#e2e2e2]"></div>
         <div>
             <p className="font-semibold text-lg mt-10">Notification Title</p>

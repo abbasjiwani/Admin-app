@@ -71,19 +71,20 @@ const index = () => {
               {/* Hello, {profileData.firstname + " " + profileData.lastname} */}
               Hello Margaret
             </p>
-            <p className="text-lg font-sans mt-1 text-gray-500">
+            {/* <p className="text-lg font-sans mt-1 text-gray-500">
               Track work progress here
-            </p>
+            </p> */}
           </div>
-          <div className="w-1/6 mt- flex place-content-end">
+          <div className="w-1/6  flex place-content-end ">
             <div>
-              <Image
+              {/* <Image
                 src="/images/Ellipse 53.png"
                 width={400}
                 height={400}
                 className="w-20  px-2 py-2 rounded-md"
                 alt=""
-              />
+              /> */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="border- border-2 border-black rounded-full" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
             </div>
           </div>
         </div>

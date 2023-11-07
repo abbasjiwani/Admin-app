@@ -63,6 +63,8 @@ import Image from "next/image";
 
 const Card = () => {
   const [PopupRefund, setPopupRefund]=useState(false);
+  const [PopupDelete,setPopupDelete]=useState(false);
+  const [PopupBlock,setPopupBlock]=useState(false);
   return (
     <>
     <div className="pt-6 pb-6 mt-4 bg-white pl-12 rounded-3xl border shadow-lg cursor-pointer" onClick={()=>{setPopupRefund(true)}}>
@@ -562,7 +564,7 @@ const Card = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
                       </button>
         </div>
-        <h2 className="place-content-center justify-center flex text-2xl font-semibold mb-4 text-[#8cd790]">Cleaners Details</h2>
+        <h2 className="place-content-center justify-center flex text-2xl font-semibold mb-4 text-[#8cd790]">Cleaner Details</h2>
         
          <div className="border border-bottom border-[#d4d4d4] w-full"></div>
          <div className="w-[70%] ml-4">
@@ -646,21 +648,135 @@ const Card = () => {
          <div className="flex justify-end w-[100%] space-x-5">
         <button
           className="bg-white  text-[#8cd790] border border-1 border-[#8cd790]  py-1 w-[20%]  "
-          onClick={() =>{setPopupRefund(false)}}
+          onClick={() =>{setPopupBlock(true),setPopupRefund(false)}}
         >
            Block
         </button>
         <button
           className="bg-[#8cd790]  text-white  py-1 w-[30%]  "
-          onClick={() =>{setPopupRefund(false)}}
+          onClick={() =>{setPopupDelete(true),setPopupRefund(false)}}
         >
           Delete Account
         </button>
         </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
+    
         </>
       )}
+
+
+
+
+
+
+
+
+{PopupDelete && (
+        <>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+      <div className="bg-white w-[30rem] p-4 rounded-lg shadow-lg">
+        <div className="flex justify-end  mb-2">
+           <button
+                        className="bg-transparent  text-black place-content-end justify-end"
+                        onClick={() =>setPopupDelete(false)}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                      </button>
+        </div>
+        <div className="flex justify-center font-semibold text-2xl text-center w-[80%] mx-auto p-10">
+          Are you sure you want to delete this account?
+
+        </div>
+
+         <div className="flex justify-center w-[100%] space-x-5 mb-10">
+        <button
+          className="bg-white  text-[#8cd790] border border-1 border-[#8cd790]  py-1 w-[30%]  "
+          onClick={() =>{setPopupDelete(false)}}
+        >
+           No
+        </button>
+        <button
+          className="bg-[#8cd790]  text-white  py-1 w-[30%]  "
+          onClick={() =>{setPopupDelete(false)}}
+        >
+          Yes
+        </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+        </>
+      )}
+
+
+
+
+
+
+
+{PopupBlock && (
+        <>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+      <div className="bg-white w-[30rem] p-4 rounded-lg shadow-lg">
+        <div className="flex justify-end  mb-2">
+           <button
+                        className="bg-transparent  text-black place-content-end justify-end"
+                        onClick={() =>setPopupBlock(false)}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                      </button>
+        </div>
+        <div className="flex justify-center font-semibold text-2xl text-center w-[80%] mx-auto p-10">
+          Are you sure you want to block this account?
+
+        </div>
+
+         <div className="flex justify-center w-[100%] space-x-5 mb-10">
+        <button
+          className="bg-white  text-[#8cd790] border border-1 border-[#8cd790]  py-1 w-[30%]  "
+          onClick={() =>{setPopupBlock(false)}}
+        >
+           No
+        </button>
+        <button
+          className="bg-[#8cd790]  text-white  py-1 w-[30%]  "
+          onClick={() =>{setPopupBlock(false)}}
+        >
+          Yes
+        </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+        </>
+      )}
+
+
 
 
     

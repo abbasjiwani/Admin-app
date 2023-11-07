@@ -7,15 +7,15 @@ const index = () => {
     <>
       <div className="w-[90%] mx-auto">
         {/* <Navbar /> */}
-        <div className="mt-8 ml-14">
-          <p className="text-3xl font-semibold mt-32  text-center">Push Notifications</p>
+        <div className="mt-24 ">
+          <p className="text-3xl font-semibold   text-center">Push Notifications</p>
           <div className="mt-10">
         <div className="border-2 border-bottom border-[#e2e2e2]"></div>
        <div className="w-[95%]">
         <button className="mt-5 text-[#8cd790] border border-[#8cd790] px-3 py-1  float-right" onClick={()=>{Router.push("/createnotification")}}>
             Create New 
         </button></div>
-        <div className="pt-6 pb-6 text-[#858585] text-xl w-[72%] mt-28  pl-12 text-center  flex justify-between">
+        <div className="pt-6 pb-6 text-[#858585] text-xl w-[72%] mt-10  pl-12 text-center  flex justify-between">
             <p >Title</p>
             <p>Date</p>
             <p>Status</p>

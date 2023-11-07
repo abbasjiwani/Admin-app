@@ -9,7 +9,7 @@ const price = () => {
         <div className="w-[22%] border border-r-2 border-[#d9d9d9]">
           <Sidebar />
         </div>
-        <div className="w-[78%]">
+        <div className="w-[78%] flex justify-center">
           <Price/>
         </div>
       </div>

@@ -5,10 +5,11 @@ const index = () => {
   const array = [];
   return (
     <>
+    <div className="flex justify-center w-full">
       <div className="w-[70%] ">
         {/* <Navbar /> */}
-        <div className="mt-8 ml-14">
-          <p className="text-3xl font-semibold mt-32  text-center">Onboarding Requests</p>
+        <div className="mt-24 ">
+          <p className="text-3xl font-semibold   text-center">Onboarding Requests</p>
           <div className="mt-10 mb-10">
        
           <Card />
@@ -16,6 +17,7 @@ const index = () => {
           </div>
           
         </div>
+      </div>
       </div>
     </>
   );
